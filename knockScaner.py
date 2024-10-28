@@ -14,7 +14,7 @@ if not ip_valida(ip):
     print("La direccion IP no es valida. Ingrese una dirección IP correcta.")
     exit(1)
 
-puertos= int(input("Ingrese los puertos: "))
+puertos= input("Ingrese los puertos: ")
 #permutacion de puertos
 lista_puertos=[int(puerto) for puerto in puertos.split()]
 variaciones =list(permutations(lista_puertos))
